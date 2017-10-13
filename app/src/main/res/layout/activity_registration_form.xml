@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+
+    tools:context="com.example.appstute_pc.registartionform.RegistrationForm">
+
+
+    <TextView
+        android:id="@+id/txtVwName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/txtVwName" />
+
+    <TextView
+        android:id="@+id/txtVwUsername"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwName"
+        android:text="Username"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@+id/txtVwUsername" />
+
+    <TextView
+        android:id="@+id/txtVwPassword"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwUsername"
+        android:text="Password"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:layout_toRightOf="@+id/txtVwPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtVwPassword"
+        android:background="@color/backgrndColor"
+        android:text="Register Details" />
+
+
+</RelativeLayout>
